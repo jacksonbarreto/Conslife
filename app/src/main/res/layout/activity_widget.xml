@@ -10,10 +10,9 @@
         android:id="@+id/filledButtonWidget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:buttonText="Mamar"
-        app:buttonHeight="2345"
-        app:buttonColor="#F8ECD1"
-
+        app:buttonHeight="170"
+        app:buttonText="R.hh"
+        app:buttonWidth="400"
         />
 
 </RelativeLayout>

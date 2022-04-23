@@ -3,7 +3,7 @@
     <declare-styleable name="ButtonAttributes">
         <attr name="buttonWidth" format="string"/>
         <attr name="buttonHeight" format="string"/>
-        <attr name="buttonColor" format="string"/>
+        <attr name="buttonColor" format="integer"/>
         <attr name="buttonText" format="string"/>
     </declare-styleable>
 </resources>
