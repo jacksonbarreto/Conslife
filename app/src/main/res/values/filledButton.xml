@@ -5,5 +5,6 @@
         <attr name="buttonHeight" format="string"/>
         <attr name="buttonColor" format="integer"/>
         <attr name="buttonText" format="string"/>
+        <attr name="isFilled" format="integer"/>
     </declare-styleable>
 </resources>

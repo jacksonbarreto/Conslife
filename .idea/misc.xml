@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/drawable/border.xml" value="0.1" />
         <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_widget.xml" value="0.15966386554621848" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/filled_button.xml" value="0.176" />
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_widget.xml" value="0.536" />
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/filled_button.xml" value="0.6" />
       </map>
     </option>
   </component>

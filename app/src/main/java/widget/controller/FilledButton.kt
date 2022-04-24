@@ -15,6 +15,7 @@ import android.widget.RelativeLayout
 import androidx.annotation.RequiresApi
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import com.conslife.R
 import com.conslife.databinding.FilledButtonBinding
 
@@ -40,7 +41,7 @@ class FilledButton @JvmOverloads constructor(
     init {
         context.obtainStyledAttributes(filledButton, R.styleable.ButtonAttributes).apply {
 
-            getInt(R.styleable.ButtonAttributes_buttonColor,R.color.conslife_magenta)?.let { setColor(it) }
+            getInt(R.styleable.ButtonAttributes_buttonColor,R.color.conslife_light_blue)?.let { setColor(it,it) }
 
             getString(R.styleable.ButtonAttributes_buttonText)?.let { setText(it) }
 
@@ -52,7 +53,7 @@ class FilledButton @JvmOverloads constructor(
 
     @RequiresApi(Build.VERSION_CODES.Q)
     @SuppressLint("ResourceAsColor")
-    fun setColor(color: Int) {
+    fun setColor(color: Int,isFilled : Int) {
         this.binding.btnFilled.backgroundTintList = AppCompatResources.getColorStateList(context,color)
     }
 
