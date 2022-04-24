@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/drawable/border.xml" value="0.1" />
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/drawable/searchbar_backgroumd.xml" value="0.1315" />
         <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_widget.xml" value="0.536" />
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_widget.xml" value="0.2920634920634921" />
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/edit_text.xml" value="0.264" />
         <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/filled_button.xml" value="0.6" />
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/inputText.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/search_bar.xml" value="0.5792811839323467" />
       </map>
     </option>
   </component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SearchBarAttributes">
+        <attr name="searchWidth" format="string" />
+        <attr name="searchHeight" format="string" />
+        <attr name="hint" format="string" />
+    </declare-styleable>
+</resources>
