@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Conslife">
         <activity
-            android:name="widget.widget"
+            android:name="widget.widget_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
