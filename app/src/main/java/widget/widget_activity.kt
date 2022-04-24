@@ -21,7 +21,7 @@ class  widget_activity : AppCompatActivity () {
         val filledButton = this.binding.filledButtonWidget
 
         filledButton.setText("Aplicar")
-        filledButton.setColor(R.color.conslife_dark_blue)
+        filledButton.setColor(R.color.conslife_magenta)
         filledButton.setBtnWidth(450)
         filledButton.setBtnHeight(200)
 

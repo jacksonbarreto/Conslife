@@ -8,6 +8,7 @@ import android.graphics.Color
 import android.graphics.PorterDuff
 import android.os.Build
 import android.util.AttributeSet
+import android.util.Log
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
@@ -53,7 +54,6 @@ class FilledButton @JvmOverloads constructor(
     @SuppressLint("ResourceAsColor")
     fun setColor(color: Int) {
         this.binding.btnFilled.backgroundTintList = AppCompatResources.getColorStateList(context,color)
-        print(color)
     }
 
     fun setText(text: String) {
