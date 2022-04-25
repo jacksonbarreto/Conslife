@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonConslife">
+        <attr name="text" format="string" />
+        <attr name="type" format="enum">
+            <enum name="primary_filled" value="1" />
+            <enum name="primary_not_filled" value="2" />
+            <enum name="secondary_filled" value="3" />
+            <enum name="secondary_not_filled" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>
