@@ -9,4 +9,13 @@
             <enum name="secondary_not_filled" value="4" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="FloatingRoundCounter">
+        <attr name="floating_round_counter_title" format="string" />
+        <attr name="floating_round_counter_total" format="string" />
+        <attr name="floating_round_counter_type" format="enum">
+            <enum name="primary" value="1" />
+            <enum name="secondary" value="2" />
+        </attr>
+    </declare-styleable>
 </resources>
