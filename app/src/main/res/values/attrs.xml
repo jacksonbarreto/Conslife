@@ -18,4 +18,13 @@
             <enum name="secondary" value="2" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="FloatingPoints">
+        <attr name="floating_points_total" format="string" />
+        <attr name="floating_points_type" format="enum">
+            <enum name="primary" value="1" />
+            <enum name="secondary" value="2" />
+        </attr>
+    </declare-styleable>
+
 </resources>
