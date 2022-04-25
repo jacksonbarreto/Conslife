@@ -1,5 +1,6 @@
 package com.conslife.widget
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.graphics.Typeface
 import com.conslife.databinding.ResTwoLinedTextViewBinding
@@ -14,21 +15,17 @@ import androidx.core.content.ContextCompat
 import com.conslife.R
 import com.conslife.databinding.ResFloatingPointsBinding
 
-class TwoLines (context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs){
+class TwoLines(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
 
     private val binding: ResTwoLinedTextViewBinding = ResTwoLinedTextViewBinding.inflate(
         LayoutInflater.from(context), this, true
     )
 
-    private val firstLineDefaulSize: Int = 24
-    private val secondLineDefaulSize: Int = 18
+    private val firstLineDefaulSize: Float = 24F
+    private val secondLineDefaulSize: Float = 18F
 
     private val firstLineIsBold: Boolean = false
     private val secondLineIsBold: Boolean = true
-
-    private val firstLineDefaulColor: Int = Color.WHITE
-    private val secondLineDefaulColor: Int = Color.GRAY
-
 
     init {
         context.obtainStyledAttributes(attrs, R.styleable.TwoLines).apply {
@@ -36,14 +33,15 @@ class TwoLines (context: Context, attrs: AttributeSet?) : LinearLayout(context, 
             getString(R.styleable.TwoLines_line_one_text)?.let { setFirstLineText(it) }
             getString(R.styleable.TwoLines_line_two_text)?.let { setSecondLineText(it) }
 
-            getInt(
+            getFloat(
                 R.styleable.TwoLines_line_one_font_size,
                 firstLineDefaulSize
             )?.let { setFirstLineFontSize(it) }
-            getInt(
+            getFloat(
                 R.styleable.TwoLines_line_two_font_size,
                 secondLineDefaulSize
             )?.let { setSecondLineFontSize(it) }
+
 
             getBoolean(
                 R.styleable.TwoLines_line_one_text_style,
@@ -54,13 +52,11 @@ class TwoLines (context: Context, attrs: AttributeSet?) : LinearLayout(context, 
                 secondLineIsBold
             )?.let { setSecondLineTextStyle(it) }
 
-            getInt(
-                R.styleable.TwoLines_line_one_text_color,
-                firstLineDefaulColor
+            getString(
+                R.styleable.TwoLines_line_one_text_color
             )?.let { setFirstLineTextColor(it) }
-            getInt(
-                R.styleable.TwoLines_line_two_text_color,
-                secondLineDefaulColor
+            getString(
+                R.styleable.TwoLines_line_two_text_color
             )?.let { setSecoundLineTextColor(it) }
         }
     }
@@ -69,8 +65,8 @@ class TwoLines (context: Context, attrs: AttributeSet?) : LinearLayout(context, 
         this.binding.tvFistLine.setText(text)
     }
 
-    fun setFirstLineFontSize(fontSize: Int) {
-        this.binding.tvFistLine.setText(fontSize)
+    fun setFirstLineFontSize(fontSize: Float) {
+        this.binding.tvFistLine.textSize = fontSize as Float
     }
 
     fun setFirstLineTextStyle(isBold: Boolean) {
@@ -79,8 +75,8 @@ class TwoLines (context: Context, attrs: AttributeSet?) : LinearLayout(context, 
 
     }
 
-    fun setFirstLineTextColor(color: Int) {
-        this.binding.tvFistLine.setTextColor(color)
+    fun setFirstLineTextColor(color: String) {
+        this.binding.tvFistLine.setTextColor(Color.parseColor(color))
     }
 
     fun setSecondLineText(text: String) {
@@ -88,8 +84,9 @@ class TwoLines (context: Context, attrs: AttributeSet?) : LinearLayout(context, 
 
     }
 
-    fun setSecondLineFontSize(fontSize: Int) {
-        this.binding.tvSecondLine.setText(fontSize)
+    fun setSecondLineFontSize(fontSize: Float) {
+        this.binding.tvSecondLine.textSize = fontSize as Float
+
     }
 
     fun setSecondLineTextStyle(isBold: Boolean) {
@@ -97,8 +94,8 @@ class TwoLines (context: Context, attrs: AttributeSet?) : LinearLayout(context, 
             this.binding.tvSecondLine.typeface = Typeface.DEFAULT_BOLD
     }
 
-    fun setSecoundLineTextColor(color: Int) {
-        this.binding.tvSecondLine.setTextColor(color)
+    fun setSecoundLineTextColor(color: String) {
+        this.binding.tvSecondLine.setTextColor(Color.parseColor(color))
 
     }
 }
