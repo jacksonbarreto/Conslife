@@ -27,4 +27,17 @@
         </attr>
     </declare-styleable>
 
+
+    <declare-styleable name="TwoLines">
+        <attr name="line_one_text" format="string" />
+        <attr name="line_one_font_size" format="string" />
+        <attr name="line_one_text_style" format="string" />
+        <attr name="line_one_text_color" format="string" />
+
+        <attr name="line_two_text" format="string" />
+        <attr name="line_two_font_size" format="string" />
+        <attr name="line_two_text_style" format="string" />
+        <attr name="line_two_text_color" format="string" />
+    </declare-styleable>
+
 </resources>
