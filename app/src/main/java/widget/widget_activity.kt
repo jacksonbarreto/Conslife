@@ -20,7 +20,7 @@ class  widget_activity : AppCompatActivity () {
 
         val searchView = this.binding.searchView
 
-        searchView.setSearchViewWidth(900)
-
+        searchView.setHint("Mega hint")
+        searchView.setSearchViewWidth(500)
     }
 }
