@@ -27,17 +27,16 @@
         </attr>
     </declare-styleable>
 
-
-    <declare-styleable name="TwoLines">
-        <attr name="line_one_text" format="string" />
-        <attr name="line_one_font_size" format="float" />
-        <attr name="line_one_text_style" format="string" />
-        <attr name="line_one_text_color" format="integer" />
-
-        <attr name="line_two_text" format="string" />
-        <attr name="line_two_font_size" format="float" />
-        <attr name="line_two_text_style" format="string" />
-        <attr name="line_two_text_color" format="integer" />
+    <declare-styleable name="DoubleHeading">
+        <attr name="double_heading_title" format="string" />
+        <attr name="double_heading_sub_title" format="string" />
+        <attr name="double_heading_size" format="enum">
+            <enum name="h1" value="1" />
+            <enum name="h2" value="2" />
+            <enum name="h3" value="3" />
+            <enum name="h4" value="4" />
+            <enum name="h5" value="5" />
+            <enum name="h6" value="6" />
+        </attr>
     </declare-styleable>
-
 </resources>
