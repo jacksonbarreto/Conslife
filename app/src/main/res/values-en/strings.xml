@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Conslife</string>
     <string name="dot_abbreviation">pts</string>
+    <string name="hint_search_view">Enter the mission name</string>
 </resources>

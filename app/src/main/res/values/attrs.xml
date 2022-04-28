@@ -27,4 +27,7 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="SearchViewConslife">
+        <attr name="search_view_conslife_hint" format="string" />
+    </declare-styleable>
 </resources>
