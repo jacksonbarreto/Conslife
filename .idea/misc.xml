@@ -3,19 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/drawable/border.xml" value="0.1" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/drawable/searchbar_backgroumd.xml" value="0.1315" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/activity_widget.xml" value="0.2920634920634921" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/edit_text.xml" value="0.264" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/filled_button.xml" value="0.6" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/inputText.xml" value="0.15520833333333334" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/res_search_bar.xml" value="0.264" />
-        <entry key="..\:/Users/valdo/Desktop/School/3rd_Year/Semestre_II/ComputacaoMovel/TrabalhoPratico/App/Conslife/app/src/main/res/layout/search_bar.xml" value="0.5792811839323467" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/drawable/button_primary_filled_conslife.xml" value="0.138" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/drawable/floating_points.xml" value="0.138" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/drawable/search_view_conslife.xml" value="0.138" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/layout/res_floating_points.xml" value="0.8800000000000001" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/layout/res_search_bar.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
