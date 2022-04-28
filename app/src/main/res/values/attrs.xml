@@ -26,8 +26,21 @@
             <enum name="secondary" value="2" />
         </attr>
     </declare-styleable>
-
+  
     <declare-styleable name="SearchViewConslife">
         <attr name="search_view_conslife_hint" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DoubleHeading">
+        <attr name="double_heading_title" format="string" />
+        <attr name="double_heading_sub_title" format="string" />
+        <attr name="double_heading_size" format="enum">
+            <enum name="h1" value="1" />
+            <enum name="h2" value="2" />
+            <enum name="h3" value="3" />
+            <enum name="h4" value="4" />
+            <enum name="h5" value="5" />
+            <enum name="h6" value="6" />
+        </attr>
     </declare-styleable>
 </resources>
