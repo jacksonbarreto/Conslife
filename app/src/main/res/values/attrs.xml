@@ -50,6 +50,7 @@
         <attr name="mission_card_date" format="string" />
         <attr name="mission_card_vacancies" format="string" />
         <attr name="mission_card_points" format="string" />
+        <attr name="mission_card_image_src" format="string" />
     </declare-styleable>
 
 </resources>
