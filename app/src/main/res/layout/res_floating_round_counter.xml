@@ -21,9 +21,9 @@
             android:id="@+id/floating_round_counter_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="-7dp"
+            android:layout_marginBottom="-5dp"
             android:textColor="@color/white"
-            android:textSize="11sp"
+            android:textSize="10sp"
             app:layout_constraintBottom_toTopOf="@+id/floating_round_counter_counter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
