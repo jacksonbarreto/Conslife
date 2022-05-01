@@ -2,4 +2,9 @@
     <string name="app_name">Conslife</string>
     <string name="dot_abbreviation">pts</string>
     <string name="hint_search_view">Enter the mission name</string>
+    <string name="btn_apply">Apply</string>
+    <string name="btn_know_more">know more</string>
+    <string name="mission_card_realization">Realization</string>
+    <string name="mission_card_deadline">Deadline</string>
+    <string name="round_counter_title">Free</string>
 </resources>
