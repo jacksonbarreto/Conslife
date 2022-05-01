@@ -43,4 +43,13 @@
             <enum name="h6" value="6" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="MissionCard">
+        <attr name="mission_card_title" format="string" />
+        <attr name="mission_card_deadline" format="string" />
+        <attr name="mission_card_date" format="string" />
+        <attr name="mission_card_vacancies" format="string" />
+        <attr name="mission_card_points" format="string" />
+    </declare-styleable>
+
 </resources>

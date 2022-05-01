@@ -21,8 +21,8 @@ class DoubleHeading(context: Context, attrs: AttributeSet?) : LinearLayout(conte
         const val H5: Int = 5
         const val H6: Int = 6
         const val INCREMENT = 2F
-        const val TITLE_DEFAULT_SIZE = 16F
-        const val SUB_TITLE_DEFAULT_SIZE = 12F
+        const val TITLE_DEFAULT_SIZE = 12F
+        const val SUB_TITLE_DEFAULT_SIZE = 10F
     }
 
     init {
