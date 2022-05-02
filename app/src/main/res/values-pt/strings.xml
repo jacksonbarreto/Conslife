@@ -11,4 +11,9 @@
     <string name="password">senha</string>
     <string name="create_account">Não tem uma conta? crie uma</string>
     <string name="create_here">aqui</string>
+    <string name="btn_apply">Aplicar</string>
+    <string name="btn_know_more">Saiba mais</string>
+    <string name="mission_card_realization">Realização</string>
+    <string name="mission_card_deadline">Inscrição até</string>
+    <string name="round_counter_title">Vagas</string>
 </resources>
