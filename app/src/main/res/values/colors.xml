@@ -10,4 +10,5 @@
     <color name="conslife_dark_blue">#111D41</color>
     <color name="conslife_light_blue">#5C97AC</color>
     <color name="conslife_magenta">#B92558</color>
+    <color name="conslife_link">#0000EE</color>
 </resources>
