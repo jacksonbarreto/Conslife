@@ -3,12 +3,12 @@
     <string name="app_name">Conslife</string>
     <string name="dot_abbreviation">pts</string>
     <string name="hint_search_view">Enter the mission name</string>
-    <string name="welcome">Welcome to Conslife!</string>
-    <string name="login">Login</string>
+    <string name="activity_login_text_welcome">Welcome to Conslife!</string>
+    <string name="activity_login_button_login">Login</string>
     <string name="login_alterantives">Or login with</string>
     <string name="conslife_motto">You, more concient</string>
-    <string name="email">email</string>
-    <string name="password">password</string>
+    <string name="activity_login_hint_email">email</string>
+    <string name="activity_login_hint_password">password</string>
     <string name="create_account">You dont have an account? create</string>
     <string name="create_here">here</string>
     <string name="btn_apply">Apply</string>
