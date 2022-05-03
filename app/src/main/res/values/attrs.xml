@@ -26,7 +26,7 @@
             <enum name="secondary" value="2" />
         </attr>
     </declare-styleable>
-  
+
     <declare-styleable name="SearchViewConslife">
         <attr name="search_view_conslife_hint" format="string" />
     </declare-styleable>
@@ -51,6 +51,15 @@
         <attr name="mission_card_vacancies" format="string" />
         <attr name="mission_card_points" format="string" />
         <attr name="mission_card_image_src" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RewardCard">
+        <attr name="reward_card_title" format="string" />
+        <attr name="reward_card_deadline" format="string" />
+        <attr name="reward_card_points" format="string" />
+        <attr name="reward_card_available" format="string" />
+        <attr name="reward_card_image_src" format="string" />
+        <attr name="reward_card_description" format="string" />
     </declare-styleable>
 
 </resources>
