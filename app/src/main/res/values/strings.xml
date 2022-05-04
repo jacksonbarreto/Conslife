@@ -17,4 +17,7 @@
     <string name="round_counter_title">Free</string>
     <string name="activity_login_logo_description">Conslife logo</string>
     <string name="activity_login_conslife_motto">You, more conscious!</string>
+    <string name="btn_reward_card_reserve">Reserve</string>
+    <string name="reward_card_available_count">Available</string>
+    <string name="reward_card_deadline">Available until:</string>
 </resources>
