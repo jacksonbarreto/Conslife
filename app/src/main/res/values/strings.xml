@@ -4,15 +4,17 @@
     <string name="hint_search_view">Enter the mission name</string>
     <string name="activity_login_text_welcome">Welcome to Conslife!</string>
     <string name="activity_login_button_login">Login</string>
-    <string name="login_alterantives">Or login with</string>
+    <string name="activity_login_login_alterantives">Or login with</string>
     <string name="conslife_motto">You, more concient</string>
-    <string name="activity_login_hint_email">email</string>
-    <string name="activity_login_hint_password">password</string>
-    <string name="create_account">You dont have an account? create</string>
-    <string name="create_here">here</string>
+    <string name="activity_login_hint_email">Email</string>
+    <string name="activity_login_hint_password">Password</string>
+    <string name="activity_login_create_account">You dont have an account? create</string>
+    <string name="activity_login_create_here">here</string>
     <string name="btn_apply">Apply</string>
     <string name="btn_know_more">know more</string>
     <string name="mission_card_realization">Realization</string>
     <string name="mission_card_deadline">Deadline</string>
     <string name="round_counter_title">Free</string>
+    <string name="activity_login_logo_description">Conslife logo</string>
+    <string name="activity_login_conslife_motto">You, more conscious!</string>
 </resources>
