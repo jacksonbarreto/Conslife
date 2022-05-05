@@ -8,8 +8,13 @@
     tools:context=".MainActivity">
 
 
-<com.conslife.widget.RewardCard
+<com.conslife.widget.ViewModeButton
+    android:id="@+id/vmb"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content"
+    app:view_mode="list"
+
+    />
+
 
 </LinearLayout>
