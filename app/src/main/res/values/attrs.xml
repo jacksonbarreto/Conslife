@@ -53,4 +53,8 @@
         <attr name="mission_card_image_src" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="RewardHead">
+        <attr name="reward_head_points" format="integer" />
+    </declare-styleable>
+
 </resources>

@@ -8,4 +8,7 @@
     <string name="mission_card_realization">Realização</string>
     <string name="mission_card_deadline">Inscrição até</string>
     <string name="round_counter_title">Vagas</string>
+    <string name="reward_head_points">pontos</string>
+    <string name="reward_head_your_points">seus pontos</string>
+    <string name="reward_head_image_description">jarro de recompensas</string>
 </resources>
