@@ -55,7 +55,7 @@
 
     <declare-styleable name="RewardHead">
         <attr name="reward_head_points" format="integer" />
-   </declare-styleable>
+    </declare-styleable>
     <declare-styleable name="RewardCard">
         <attr name="reward_card_title" format="string" />
         <attr name="reward_card_deadline" format="string" />
