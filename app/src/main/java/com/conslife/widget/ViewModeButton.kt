@@ -43,9 +43,7 @@ class ViewModeButton(context: Context, attrs: AttributeSet?) : LinearLayout(cont
                 0,
                 0
             )
-
-            println("Number 1")
-
+            this.binding.viewModeButton.setPadding(20, 0, 0, 0)
         } else if (icon == 2) {
             this.binding.viewModeButton.setCompoundDrawablesWithIntrinsicBounds(
                 R.drawable.ic_map_icon,
@@ -53,7 +51,7 @@ class ViewModeButton(context: Context, attrs: AttributeSet?) : LinearLayout(cont
                 0,
                 0
             )
-            println("Number 2")
+            this.binding.viewModeButton.setPadding(20, 0, 0, 0)
         }
     }
 }
