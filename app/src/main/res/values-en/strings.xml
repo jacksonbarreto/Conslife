@@ -8,6 +8,9 @@
     <string name="mission_card_realization">Realization</string>
     <string name="mission_card_deadline">Deadline</string>
     <string name="round_counter_title">Free</string>
+    <string name="reward_head_points">points</string>
+    <string name="reward_head_your_points">your points</string>
+    <string name="reward_head_image_description">bounty jar</string>
     <string name="btn_reward_card_reserve">Reserve</string>
     <string name="reward_card_available_count">Available</string>
     <string name="reward_card_deadline">Available until:</string>
