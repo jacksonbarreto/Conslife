@@ -11,4 +11,7 @@
     <string name="reward_head_points">pontos</string>
     <string name="reward_head_your_points">seus pontos</string>
     <string name="reward_head_image_description">jarro de recompensas</string>
+    <string name="btn_reward_card_reserve">Resgatar</string>
+    <string name="reward_card_available_count">Restantes</string>
+    <string name="reward_card_deadline">Disponível até:</string>
 </resources>
