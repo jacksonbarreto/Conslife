@@ -4,7 +4,7 @@
     <string name="hint_search_view">Enter the mission name</string>
     <string name="activity_login_text_welcome">Welcome to Conslife!</string>
     <string name="activity_login_button_login">Login</string>
-    <string name="activity_login_login_alterantives">Or login with</string>
+    <string name="activity_login_login_alternatives">Or login with</string>
     <string name="conslife_motto">You, more concient</string>
     <string name="activity_login_hint_email">Email</string>
     <string name="activity_login_hint_password">Password</string>
@@ -17,6 +17,9 @@
     <string name="round_counter_title">Free</string>
     <string name="activity_login_logo_description">Conslife logo</string>
     <string name="activity_login_conslife_motto">You, more conscious!</string>
+    <string name="reward_head_points">points</string>
+    <string name="reward_head_your_points">your points</string>
+    <string name="reward_head_image_description">bounty jar</string>
     <string name="btn_reward_card_reserve">Reserve</string>
     <string name="reward_card_available_count">Available</string>
     <string name="reward_card_deadline">Available until:</string>
