@@ -27,4 +27,8 @@
     <string name="menu_rewards">Rewards</string>
     <string name="menu_my_missions">My Missions</string>
     <string name="menu_ranking">Ranking</string>
+    <string name="my_mission_menu_current">Current</string>
+    <string name="my_mission_menu_future">Future</string>
+    <string name="my_mission_menu_past">Past</string>
+    <string name="activity_my_mission_title">My Missions</string>
 </resources>

@@ -2,7 +2,8 @@ package com.conslife.screens
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.conslife.R
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.conslife.databinding.ActivityMyMissionsBinding
 
 class MyMissionsActivity : AppCompatActivity() {
@@ -12,5 +13,10 @@ class MyMissionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMyMissionsBinding.inflate(layoutInflater)
         setContentView(_binding.root)
+
+        val navHostFragment = (supportFragmentManager.findFragmentById(_binding.fragmentContainerView.id)) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        _binding.myMissionMenuNavigation.setupWithNavController(navController)
     }
 }
