@@ -34,4 +34,5 @@ hs_err_pid*
 .cxx
 local.properties
 .idea/*.xml
+/.idea/*.xml
 
