@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    tools:context=".screens.Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logo_image_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/conslife_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/activity_login_logo_description"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_white_conslife_logo"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/text_views_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintLeft_toLeftOf="@id/edit_texts_container"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_view_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_login_text_welcome"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+        <TextView
+            android:id="@+id/text_view_motto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/conslife_motto"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_texts_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_views_container">
+
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints="emailAddress"
+            android:backgroundTint="@color/white"
+            android:hint="@string/activity_login_hint_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:autofillHints="password"
+            android:backgroundTint="@color/white"
+            android:hint="@string/activity_login_hint_password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_email" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/text_view_create_account_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_texts_container">
+
+
+        <TextView
+            android:id="@+id/text_view_create_account_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_login_create_account"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="509dp" />
+
+        <TextView
+            android:id="@+id/text_view_create_account_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/activity_login_create_here"
+            android:textColor="@color/conslife_dark_blue" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/activity_login_button_login"
+        android:textColor="@color/conslife_light_blue"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_create_account_container"
+        app:layout_constraintVertical_bias="0.458" />
+
+
+    <LinearLayout
+        android:id="@+id/or_connect_with_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/button_login">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="70dp"
+            android:layout_height="3dp"
+            android:alpha="0.9"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/text_view_login_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/activity_login_login_alternatives"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="70dp"
+            android:layout_height="3dp"
+            android:alpha="0.9"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_buttons_container"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or_connect_with_container">
+
+        <Button
+            android:id="@+id/button_facebook"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.10"
+            android:backgroundTint="@color/white"
+            app:icon="@drawable/ic_facebook_logo"
+            app:iconGravity="top"
+            app:iconTint="@color/conslife_light_blue" />
+
+        <Button
+            android:id="@+id/button_google"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.10"
+            android:backgroundTint="@color/white"
+            app:icon="@drawable/ic_google_logo"
+            app:iconGravity="top"
+            app:iconTint="@color/conslife_light_blue"
+            app:layout_constraintLeft_toRightOf="@+id/button_facebook" />
+
+        <Button
+            android:id="@+id/button_call"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.10"
+            android:backgroundTint="@color/white"
+            app:icon="@drawable/phone"
+            app:iconGravity="top"
+            app:iconTint="@color/conslife_light_blue"
+            app:layout_constraintLeft_toRightOf="@+id/button_google" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

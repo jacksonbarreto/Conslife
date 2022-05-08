@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/drawable/ic_map_icon.xml" value="0.1815" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/drawable/oval_shape.xml" value="0.1815" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/layout/activity_login.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/layout/res_search_bar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jacks/AndroidStudioProjects/Conslife/app/src/main/res/layout/res_view_mode_button.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
