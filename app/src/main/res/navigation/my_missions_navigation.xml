@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_missions_navegation"
+    app:startDestination="@id/currentMissionsFragment">
+
+    <fragment
+        android:id="@+id/currentMissionsFragment"
+        tools:layout="@layout/current_mission_fragment"
+        android:name="com.conslife.fragments.CurrentMissionsFragment"
+        android:label="CurrentMissionsFragment" />
+    <fragment
+        android:id="@+id/futureMissionsFragment"
+        tools:layout="@layout/future_mission_fragment"
+        android:name="com.conslife.fragments.FutureMissionsFragment"
+        android:label="FutureMissionsFragment" />
+    <fragment
+        android:id="@+id/pastMissionsFragment"
+        tools:layout="@layout/past_mission_fragment"
+        android:name="com.conslife.fragments.PastMissionsFragment"
+        android:label="PastMissionsFragment" />
+</navigation>
