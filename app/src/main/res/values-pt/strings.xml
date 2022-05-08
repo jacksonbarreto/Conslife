@@ -24,4 +24,8 @@
     <string name="btn_reward_card_reserve">Resgatar</string>
     <string name="reward_card_available_count">Restantes</string>
     <string name="reward_card_deadline">Disponível até:</string>
+    <string name="menu_home">Início</string>
+    <string name="menu_rewards">Recompensas</string>
+    <string name="menu_my_missions">Minhas Missões</string>
+    <string name="menu_ranking">Ranking</string>
 </resources>

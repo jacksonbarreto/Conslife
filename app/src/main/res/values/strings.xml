@@ -23,4 +23,8 @@
     <string name="btn_reward_card_reserve">Reserve</string>
     <string name="reward_card_available_count">Available</string>
     <string name="reward_card_deadline">Available until:</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_rewards">Rewards</string>
+    <string name="menu_my_missions">My Missions</string>
+    <string name="menu_ranking">Ranking</string>
 </resources>
