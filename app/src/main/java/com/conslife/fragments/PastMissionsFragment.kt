@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.conslife.adapters.MissionAdapter
+import com.conslife.adapters.FutureMissionAdapter
 import com.conslife.databinding.PastMissionFragmentBinding
 import com.conslife.models.Mission
 import java.util.ArrayList
@@ -14,7 +14,7 @@ import java.util.ArrayList
 class PastMissionsFragment : Fragment() {
 
     private lateinit var _binding: PastMissionFragmentBinding
-    private lateinit var missionAdapter: MissionAdapter
+    private lateinit var futureMissionAdapter: FutureMissionAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,11 +31,11 @@ class PastMissionsFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        missionAdapter = MissionAdapter()
+        futureMissionAdapter = FutureMissionAdapter()
         addDataSet()
         _binding.myPastMissionsRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@PastMissionsFragment.context)
-            adapter = missionAdapter
+            adapter = futureMissionAdapter
         }
     }
 
@@ -44,7 +44,7 @@ class PastMissionsFragment : Fragment() {
         missions.add(
             Mission(
                 "Cuidar do cão",
-                "Marinha, Esposend",
+                "Barcelinhos, Barcelos",
                 "Tudo muito limpinho",
                 "22/05/2023",
                 "17/08/2024",
@@ -56,7 +56,31 @@ class PastMissionsFragment : Fragment() {
         missions.add(
             Mission(
                 "Cuidar do cão",
-                "Marinha, Esposend",
+                "Marinha, Esposende",
+                "Tudo muito limpinho",
+                "22/05/2023",
+                "17/08/2024",
+                14,
+                469,
+                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
+            )
+        )
+        missions.add(
+            Mission(
+                "Reflorestar o parque",
+                "Vila do Conde, Porto",
+                "Tudo muito limpinho",
+                "22/05/2023",
+                "17/08/2024",
+                2,
+                247,
+                "https://essenciadoambiente.pt/wp-content/uploads/2020/09/ctt-agenda.png"
+            )
+        )
+        missions.add(
+            Mission(
+                "Cuidar do cão",
+                "Meadela, Viana do Castelo",
                 "Tudo muito limpinho",
                 "22/05/2023",
                 "17/08/2024",
@@ -68,7 +92,7 @@ class PastMissionsFragment : Fragment() {
         missions.add(
             Mission(
                 "Cuidar do cão",
-                "Marinha, Esposend",
+                "Famalicão, Porto",
                 "Tudo muito limpinho",
                 "22/05/2023",
                 "17/08/2024",
@@ -77,18 +101,6 @@ class PastMissionsFragment : Fragment() {
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
             )
         )
-        missions.add(
-            Mission(
-                "Cuidar do cão",
-                "Marinha, Esposend",
-                "Tudo muito limpinho",
-                "22/05/2023",
-                "17/08/2024",
-                14,
-                469,
-                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
-            )
-        )
-        missionAdapter.setDataSet(missions)
+        futureMissionAdapter.setDataSet(missions)
     }
 }

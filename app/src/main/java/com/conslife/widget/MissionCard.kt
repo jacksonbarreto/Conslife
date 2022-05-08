@@ -19,13 +19,32 @@ class MissionCard(context: Context, attrs: AttributeSet?) : ConstraintLayout(con
     init {
         context.obtainStyledAttributes(attrs, R.styleable.MissionCard).apply {
             getString(R.styleable.MissionCard_mission_card_title)?.let { setTitle(it) }
+            getString(R.styleable.MissionCard_mission_card_location)?.let { setLocation(it) }
             getString(R.styleable.MissionCard_mission_card_date)?.let { setDate(it) }
             getString(R.styleable.MissionCard_mission_card_deadline)?.let { setDeadline(it) }
             getString(R.styleable.MissionCard_mission_card_points)?.let { setPoints(it) }
             getString(R.styleable.MissionCard_mission_card_vacancies)?.let { setVacancies(it) }
             getString(R.styleable.MissionCard_mission_card_image_src)?.let { setImage(it) }
+            getString(R.styleable.MissionCard_mission_card_primary_button)?.let { setTextPrimaryButton(it) }
+            getString(R.styleable.MissionCard_mission_card_second_button)?.let { setTextSecondButton(it) }
         }.recycle()
 
+    }
+
+    fun setTextPrimaryButton(text: String) {
+        if (text.isBlank()) {
+            binding.missionCardPrimaryButton.setText(context.getString(R.string.btn_apply))
+        } else {
+            binding.missionCardPrimaryButton.setText(text)
+        }
+    }
+
+    fun setTextSecondButton(text: String) {
+        if (text.isBlank()) {
+            binding.missionCardSecondButton.setText(context.getString(R.string.btn_apply))
+        } else {
+            binding.missionCardSecondButton.setText(text)
+        }
     }
 
     fun setImage(imageURL: String) {
@@ -40,7 +59,11 @@ class MissionCard(context: Context, attrs: AttributeSet?) : ConstraintLayout(con
     }
 
     fun setTitle(title: String) {
-        binding.missionCardMissionTitle.text = title
+        binding.missionCardMissionTitle.setTitle(title)
+    }
+
+    fun setLocation(location: String) {
+        binding.missionCardMissionTitle.setSubTitle(location)
     }
 
     fun setPoints(points: String) {

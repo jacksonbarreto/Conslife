@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.conslife.adapters.MissionAdapter
+import com.conslife.adapters.FutureMissionAdapter
 import com.conslife.databinding.FutureMissionFragmentBinding
 import com.conslife.models.Mission
 import java.util.ArrayList
@@ -14,7 +14,7 @@ import java.util.ArrayList
 class FutureMissionsFragment : Fragment() {
 
     private lateinit var _binding: FutureMissionFragmentBinding
-    private lateinit var missionAdapter: MissionAdapter
+    private lateinit var futureMissionAdapter: FutureMissionAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,11 +31,11 @@ class FutureMissionsFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        missionAdapter = MissionAdapter()
+        futureMissionAdapter = FutureMissionAdapter()
         addDataSet()
         _binding.myFutureMissionsRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@FutureMissionsFragment.context)
-            adapter = missionAdapter
+            adapter = futureMissionAdapter
         }
     }
 
@@ -56,7 +56,7 @@ class FutureMissionsFragment : Fragment() {
         missions.add(
             Mission(
                 "Cuidar do cão",
-                "Marinha, Esposend",
+                "Marinha, Esposende",
                 "Tudo muito limpinho",
                 "22/05/2023",
                 "17/08/2024",
@@ -65,6 +65,6 @@ class FutureMissionsFragment : Fragment() {
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
             )
         )
-        missionAdapter.setDataSet(missions)
+        futureMissionAdapter.setDataSet(missions)
     }
 }

@@ -46,6 +46,9 @@
 
     <declare-styleable name="MissionCard">
         <attr name="mission_card_title" format="string" />
+        <attr name="mission_card_location" format="string" />
+        <attr name="mission_card_primary_button" format="string" />
+        <attr name="mission_card_second_button" format="string" />
         <attr name="mission_card_deadline" format="string" />
         <attr name="mission_card_date" format="string" />
         <attr name="mission_card_vacancies" format="string" />
