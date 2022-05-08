@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.conslife.adapters.MissionAdapter
+import com.conslife.adapters.FutureMissionAdapter
 import com.conslife.databinding.CurrentMissionFragmentBinding
 import com.conslife.models.Mission
 import java.util.ArrayList
@@ -14,7 +14,7 @@ import java.util.ArrayList
 class CurrentMissionsFragment : Fragment() {
 
     private lateinit var _binding: CurrentMissionFragmentBinding
-    private lateinit var missionAdapter: MissionAdapter
+    private lateinit var futureMissionAdapter: FutureMissionAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,11 +31,11 @@ class CurrentMissionsFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        missionAdapter = MissionAdapter()
+        futureMissionAdapter = FutureMissionAdapter()
         addDataSet()
         _binding.myCurrentMissionsRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@CurrentMissionsFragment.context)
-            adapter = missionAdapter
+            adapter = futureMissionAdapter
         }
     }
 
@@ -44,7 +44,7 @@ class CurrentMissionsFragment : Fragment() {
         missions.add(
             Mission(
                 "Limpe a praia 2",
-                "Praia Norte, Viana do Castelo",
+                "Centro, Viana do Castelo",
                 "Tudo muito limpinho",
                 "22/05/2023",
                 "17/08/2024",
@@ -56,7 +56,7 @@ class CurrentMissionsFragment : Fragment() {
         missions.add(
             Mission(
                 "Cuidar do cão",
-                "Marinha, Esposend",
+                "Marinha, Esposende",
                 "Tudo muito limpinho",
                 "22/05/2023",
                 "17/08/2024",
@@ -65,6 +65,6 @@ class CurrentMissionsFragment : Fragment() {
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
             )
         )
-        missionAdapter.setDataSet(missions)
+        futureMissionAdapter.setDataSet(missions)
     }
 }

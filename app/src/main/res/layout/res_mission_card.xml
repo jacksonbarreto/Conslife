@@ -59,14 +59,13 @@
                     android:orientation="vertical"
                     android:paddingHorizontal="10dp">
 
-                    <TextView
+                    <com.conslife.widget.DoubleHeading
                         android:id="@+id/mission_card_mission_title"
-                        android:layout_width="180dp"
+                        android:layout_width="179dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        app:double_heading_size="h2"
+                        app:double_heading_sub_title="Cuba, Havana"
+                        app:double_heading_title="Objetivo da missão" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -100,7 +99,7 @@
                         android:orientation="horizontal">
 
                         <com.conslife.widget.ButtonConslife
-                            android:id="@+id/mission_card_btn_know_more"
+                            android:id="@+id/mission_card_second_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
@@ -109,7 +108,7 @@
                             app:type="primary_not_filled" />
 
                         <com.conslife.widget.ButtonConslife
-                            android:id="@+id/mission_card_btn_apply"
+                            android:id="@+id/mission_card_primary_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="3.5"
