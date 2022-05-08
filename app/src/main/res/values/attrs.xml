@@ -62,10 +62,10 @@
         <attr name="reward_card_description" format="string" />
     </declare-styleable>
 
-    <declare-styleable name="ViewMode">
-        <attr name="view_mode" format="enum">
-            <enum name="list" value="1" />
-            <enum name="map" value="2" />
+    <declare-styleable name="ViewModeButton">
+        <attr name="view_mode_type" format="enum">
+            <enum name="list_view" value="1" />
+            <enum name="map_view" value="2" />
         </attr>
     </declare-styleable>
 </resources>

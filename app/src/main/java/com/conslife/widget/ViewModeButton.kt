@@ -3,55 +3,34 @@ package com.conslife.widget
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.widget.EditText
 import android.widget.LinearLayout
-import androidx.core.content.ContextCompat
 import com.conslife.R
-import com.conslife.databinding.ResSearchBarBinding
 import com.conslife.databinding.ResViewModeButtonBinding
 
 class ViewModeButton(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
+
+    companion object {
+        const val LIST_VIEW: Int = 1
+        const val MAP_VIEW: Int = 2
+    }
 
     private val binding: ResViewModeButtonBinding = ResViewModeButtonBinding.inflate(
         LayoutInflater.from(context), this, true
     )
 
-    companion object {
-        const val listView: Int = 1
-        const val mapView: Int = 2
-    }
 
     init {
-        context.obtainStyledAttributes(attrs, R.styleable.ViewMode).apply {
-            getInt(R.styleable.ViewMode_view_mode, 2)?.let { setViewMode(it) }
+        context.obtainStyledAttributes(attrs, R.styleable.ViewModeButton).apply {
+            setViewMode(getInt(R.styleable.ViewModeButton_view_mode_type, 1))
+        }.recycle()
+    }
+
+    fun setViewMode(view_mode: Int) {
+        when (view_mode) {
+            LIST_VIEW -> this.binding.viewModeButton.setImageResource(R.drawable.ic_list_icon)
+            MAP_VIEW -> this.binding.viewModeButton.setImageResource(R.drawable.ic_map_icon)
+            else -> this.binding.viewModeButton.setImageResource(R.drawable.ic_list_icon)
         }
     }
 
-    fun setViewMode(mode: Int) {
-        when (mode) {
-            listView -> setButtonIcon(listView)
-            mapView -> setButtonIcon(mapView)
-            else -> setButtonIcon(listView)
-        }
-    }
-
-    private fun setButtonIcon(icon: Int) {
-        if (icon == 1) {
-            this.binding.viewModeButton.setCompoundDrawablesWithIntrinsicBounds(
-                R.drawable.ic_list_icon,
-                0,
-                0,
-                0
-            )
-            this.binding.viewModeButton.setPadding(20, 0, 0, 0)
-        } else if (icon == 2) {
-            this.binding.viewModeButton.setCompoundDrawablesWithIntrinsicBounds(
-                R.drawable.ic_map_icon,
-                0,
-                0,
-                0
-            )
-            this.binding.viewModeButton.setPadding(20, 0, 0, 0)
-        }
-    }
 }
