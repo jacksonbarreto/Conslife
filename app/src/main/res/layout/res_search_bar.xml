@@ -12,5 +12,5 @@
         android:focusable="false"
         app:iconifiedByDefault="false"
         app:queryHint="@string/hint_search_view"
-        app:searchIcon="@drawable/ic_baseline_search_24" />
+        app:searchIcon="@drawable/ic_nav_mission_search_icon" />
 </LinearLayout>

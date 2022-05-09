@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:title="@string/menu_home" android:icon="@drawable/ic_outline_home_24" />
-<item android:title="@string/menu_rewards" android:icon="@drawable/ic_outline_home_24" />
-<item android:title="@string/menu_my_missions" android:icon="@drawable/ic_outline_home_24" />
-<item android:title="@string/menu_ranking" android:icon="@drawable/ic_outline_home_24" />
+<item android:title="@string/menu_rewards" android:icon="@drawable/ic_nav_reward_icon" />
+<item android:title="@string/menu_my_missions" android:icon="@drawable/ic_nav_mission_search_icon" />
+<item android:title="@string/menu_ranking" android:icon="@drawable/ic_nav_ranking_icon" />
 </menu>
