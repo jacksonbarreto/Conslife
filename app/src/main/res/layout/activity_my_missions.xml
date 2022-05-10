@@ -14,10 +14,11 @@
 
         <ImageView
             android:id="@+id/signal_logo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ic_white_conslife_logo"
-            android:scaleType="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_conslife_signal"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="30dp"/>
