@@ -36,4 +36,8 @@
     <string name="title_page_find_mission">Available Missions</string>
     <string name="title_page_general_ranking">General Ranking</string>
     <string name="title_page_monthly_raning">Monthly Ranking</string>
+    <string name="fragment_current_mission_button_confirm">confirm participation</string>
+    <string name="fragment_current_mission_hour">Hour</string>
+    <string name="fragment_current_mission_date">Date</string>
+    <string name="image_description_avatar">user avatar</string>
 </resources>
