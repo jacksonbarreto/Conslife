@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/currentMissionsFragment"
-        tools:layout="@layout/current_mission_fragment"
+        tools:layout="@layout/fragment_current_mission"
         android:name="com.conslife.fragments.CurrentMissionsFragment"
         android:label="CurrentMissionsFragment" />
     <fragment

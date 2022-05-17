@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,9 +13,9 @@
 
         <ImageView
             android:id="@+id/signal_logo"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
             android:contentDescription="@string/image_description_signal_brand"
             android:scaleType="fitXY"
@@ -22,12 +23,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/oval_shape"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/image_description_avatar"
+                android:src="@drawable/ic_baseline_person_24" />
+        </LinearLayout>
+
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
             android:text="@string/activity_my_mission_title"
             android:textAllCaps="true"
             android:textSize="40sp"
@@ -38,9 +58,9 @@
     <View
         android:id="@+id/header_bottom_line"
         android:layout_width="match_parent"
-        android:layout_height="0.6dp"
+        android:layout_height="0.5dp"
         android:layout_marginTop="10dp"
-        android:alpha="0.9"
+        android:alpha="0.6"
         android:background="@color/conslife_dark_blue"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
@@ -59,6 +79,8 @@
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_mission_menu_navigation"
-        app:navGraph="@navigation/my_missions_navigation" />
+        app:layout_constraintVertical_bias="0.0"
+        app:navGraph="@navigation/my_missions_navigation"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
