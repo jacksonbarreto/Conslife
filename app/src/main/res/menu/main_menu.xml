@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/myMissionsFragment"
         android:icon="@drawable/ic_outline_home_24"
         android:title="@string/menu_home" />
     <item
+        android:id="@+id/findMissionFragment"
         android:icon="@drawable/ic_nav_mission_search_icon"
         android:title="@string/menu_missions" />
     <item
+        android:id="@+id/rewardsFragment"
         android:icon="@drawable/ic_nav_reward_icon"
         android:title="@string/menu_rewards" />
     <item
+        android:id="@+id/rankingFragment"
         android:icon="@drawable/ic_nav_ranking_icon"
         android:title="@string/menu_ranking" />
 </menu>
