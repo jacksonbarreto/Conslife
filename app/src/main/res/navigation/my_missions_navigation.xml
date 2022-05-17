@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/my_missions_navegation"
+    android:id="@+id/my_missions_navigation"
     app:startDestination="@id/currentMissionsFragment">
 
     <fragment
@@ -20,4 +20,5 @@
         tools:layout="@layout/past_mission_fragment"
         android:name="com.conslife.fragments.PastMissionsFragment"
         android:label="PastMissionsFragment" />
+
 </navigation>

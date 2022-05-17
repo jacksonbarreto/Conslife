@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/myMissionsFragment">
+
+    <fragment
+        android:id="@+id/myMissionsFragment"
+        tools:layout="@layout/fragment_my_missions"
+        android:name="com.conslife.fragments.MyMissionsFragment"
+        android:label="MyMissionsFragment" />
+    <fragment
+        android:id="@+id/rankingFragment"
+        tools:layout="@layout/fragment_ranking"
+        android:name="com.conslife.fragments.RankingFragment"
+        android:label="RankingFragment" />
+    <fragment
+        android:id="@+id/findMissionFragment"
+        tools:layout="@layout/fragment_find_mission"
+        android:name="com.conslife.fragments.FindMissionFragment"
+        android:label="FindMissionFragment" />
+    <fragment
+        android:id="@+id/rewardsFragment"
+        tools:layout="@layout/fragment_find_mission"
+        android:name="com.conslife.fragments.RewardsFragment"
+        android:label="RewardsFragment" />
+</navigation>

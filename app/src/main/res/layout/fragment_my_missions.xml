@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".screens.MyMissionsActivity">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
@@ -16,44 +14,42 @@
             android:id="@+id/signal_logo"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/ic_conslife_signal"
-            android:scaleType="fitXY"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image_description_signal_brand"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_conslife_signal"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="30dp"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
             android:text="@string/activity_my_mission_title"
             android:textAllCaps="true"
             android:textSize="40sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="40dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signal_logo"/>
-
+            app:layout_constraintTop_toBottomOf="@+id/signal_logo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     <View
         android:id="@+id/header_bottom_line"
         android:layout_width="match_parent"
         android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
         android:alpha="0.9"
         android:background="@color/conslife_dark_blue"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/header"/>
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/my_mission_menu_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/my_mission_menu"
-        app:layout_constraintTop_toBottomOf="@+id/header_bottom_line"/>
+        app:layout_constraintTop_toBottomOf="@+id/header_bottom_line"
+        app:menu="@menu/my_mission_menu" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
@@ -61,17 +57,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/my_missions_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_mission_menu_navigation"
-        app:layout_constraintBottom_toTopOf="@id/main_menu"/>
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/main_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:menu="@menu/main_menu"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
+        app:navGraph="@navigation/my_missions_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

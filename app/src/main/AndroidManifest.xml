@@ -11,31 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Conslife">
         <activity
-            android:name=".screens.RankingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".screens.MyMissionsActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".screens.RewardsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".screens.HomeActivity"
+            android:name=".screens.MainActivity"
             android:exported="false" />
         <activity
             android:name=".screens.Login"
-            android:exported="false">
-
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
     </application>
 
 </manifest>
