@@ -25,7 +25,7 @@
     <string name="reward_card_deadline">Available until:</string>
     <string name="menu_home">Home</string>
     <string name="menu_rewards">Rewards</string>
-    <string name="menu_my_missions">My Missions</string>
+    <string name="menu_missions">Missions</string>
     <string name="menu_ranking">Ranking</string>
     <string name="my_mission_menu_current">Current</string>
     <string name="my_mission_menu_future">Future</string>

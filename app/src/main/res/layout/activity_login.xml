@@ -232,7 +232,7 @@
             android:layout_marginEnd="10dp"
             android:layout_weight="0.10"
             android:backgroundTint="@color/white"
-            app:icon="@drawable/ic_facebook_logo"
+            app:icon="@drawable/ic_facebook_icon"
             app:iconGravity="top"
             app:iconTint="@color/conslife_light_blue" />
 
