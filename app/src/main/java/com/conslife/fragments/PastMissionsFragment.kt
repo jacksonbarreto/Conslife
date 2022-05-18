@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.conslife.adapters.FutureMissionAdapter
+import com.conslife.adapters.PastMissionAdapter
 import com.conslife.databinding.PastMissionFragmentBinding
 import com.conslife.models.Mission
 import java.util.ArrayList
@@ -14,7 +15,7 @@ import java.util.ArrayList
 class PastMissionsFragment : Fragment() {
 
     private lateinit var _binding: PastMissionFragmentBinding
-    private lateinit var futureMissionAdapter: FutureMissionAdapter
+    private lateinit var pastMissionAdapter: PastMissionAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,11 +32,11 @@ class PastMissionsFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        futureMissionAdapter = FutureMissionAdapter()
+        pastMissionAdapter = PastMissionAdapter()
         addDataSet()
         _binding.myPastMissionsRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@PastMissionsFragment.context)
-            adapter = futureMissionAdapter
+            adapter = pastMissionAdapter
         }
     }
 
@@ -50,7 +51,8 @@ class PastMissionsFragment : Fragment() {
                 "17/08/2024",
                 14,
                 469,
-                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
+                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
+                "Concluída"
             )
         )
         missions.add(
@@ -62,7 +64,8 @@ class PastMissionsFragment : Fragment() {
                 "17/08/2024",
                 14,
                 469,
-                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
+                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
+                "Pendente"
             )
         )
         missions.add(
@@ -74,7 +77,8 @@ class PastMissionsFragment : Fragment() {
                 "17/08/2024",
                 2,
                 247,
-                "https://essenciadoambiente.pt/wp-content/uploads/2020/09/ctt-agenda.png"
+                "https://essenciadoambiente.pt/wp-content/uploads/2020/09/ctt-agenda.png",
+                "anulada"
             )
         )
         missions.add(
@@ -86,7 +90,8 @@ class PastMissionsFragment : Fragment() {
                 "17/08/2024",
                 14,
                 469,
-                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
+                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
+                "Concluída"
             )
         )
         missions.add(
@@ -98,9 +103,10 @@ class PastMissionsFragment : Fragment() {
                 "17/08/2024",
                 14,
                 469,
-                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
+                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
+                "Concluída"
             )
         )
-        futureMissionAdapter.setDataSet(missions)
+        pastMissionAdapter.setDataSet(missions)
     }
 }

@@ -41,4 +41,5 @@
     <string name="fragment_current_mission_hour">Hora</string>
     <string name="fragment_current_mission_date">Data</string>
     <string name="image_description_avatar">avatar do utilizador</string>
+    <string name="mission_card_past_status">Status</string>
 </resources>

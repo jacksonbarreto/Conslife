@@ -9,4 +9,5 @@ data class Mission(
     var vacancies: Int,
     var points: Int,
     var imageURL: String,
+    var status: String,
 )

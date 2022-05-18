@@ -50,7 +50,8 @@ class FutureMissionsFragment : Fragment() {
                 "17/08/2024",
                 2,
                 247,
-                "https://essenciadoambiente.pt/wp-content/uploads/2020/09/ctt-agenda.png"
+                "https://essenciadoambiente.pt/wp-content/uploads/2020/09/ctt-agenda.png",
+                "pendente"
             )
         )
         missions.add(
@@ -62,7 +63,8 @@ class FutureMissionsFragment : Fragment() {
                 "17/08/2024",
                 14,
                 469,
-                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png"
+                "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
+                "pendente"
             )
         )
         futureMissionAdapter.setDataSet(missions)
