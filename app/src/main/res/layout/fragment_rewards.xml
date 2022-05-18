@@ -43,15 +43,29 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginTop="30dp"
-            android:text="@string/activity_my_mission_title"
+            android:text="@string/title_page_rewards"
             android:textAllCaps="true"
             android:textSize="40sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signal_logo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.conslife.widget.RewardHead
+        android:id="@+id/reward_head_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/header"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rewards_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reward_head_card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
