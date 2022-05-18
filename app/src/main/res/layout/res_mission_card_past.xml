@@ -61,11 +61,11 @@
 
                     <com.conslife.widget.DoubleHeading
                         android:id="@+id/mission_card_mission_title"
-                        android:layout_width="179dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:double_heading_size="h2"
                         app:double_heading_sub_title="Cuba, Havana"
-                        app:double_heading_title="Objetivo da missão" />
+                        app:double_heading_title="Título da missão" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -83,43 +83,19 @@
                             app:double_heading_title="03/03/2023" />
 
                         <com.conslife.widget.DoubleHeading
-                            android:id="@+id/mission_card_deadline"
+                            android:id="@+id/mission_card_status"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             app:double_heading_size="h1"
-                            app:double_heading_sub_title="@string/mission_card_deadline"
-                            app:double_heading_title="03/03/2023" />
+                            app:double_heading_sub_title="@string/mission_card_past_status"
+                            app:double_heading_title="concluída" />
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-
-                        <com.conslife.widget.ButtonConslife
-                            android:id="@+id/mission_card_second_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:layout_weight="1"
-                            app:text="@string/btn_know_more"
-                            app:type="primary_not_filled" />
-
-                        <com.conslife.widget.ButtonConslife
-                            android:id="@+id/mission_card_primary_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="3.5"
-                            app:text="@string/btn_apply"
-                            app:type="primary_filled" />
-                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -132,18 +108,6 @@
         app:floating_points_total="500"
         app:floating_points_type="primary"
         app:layout_constraintStart_toStartOf="@+id/mission_card_container"
-        app:layout_constraintTop_toTopOf="@+id/mission_card_container" />
-
-    <com.conslife.widget.FloatingRoundCounter
-        android:id="@+id/mission_card_vacancies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="10dp"
-        app:floating_round_counter_title="@string/round_counter_title"
-        app:floating_round_counter_total="06"
-        app:floating_round_counter_type="primary"
-        app:layout_constraintEnd_toEndOf="@+id/mission_card_container"
         app:layout_constraintTop_toTopOf="@+id/mission_card_container" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,6 +56,15 @@
         <attr name="mission_card_image_src" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="MissionCardPast">
+        <attr name="mission_card_past_title" format="string" />
+        <attr name="mission_card_past_location" format="string" />
+        <attr name="mission_card_past_date" format="string" />
+        <attr name="mission_card_past_status" format="string" />
+        <attr name="mission_card_past_points" format="string" />
+        <attr name="mission_card_past_image_src" format="string" />
+    </declare-styleable>
+
     <declare-styleable name="RewardHead">
         <attr name="reward_head_points" format="integer" />
     </declare-styleable>
