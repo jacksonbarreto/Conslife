@@ -36,7 +36,7 @@
     <string name="image_description_signal_brand">Símbolo da Marca</string>
     <string name="title_page_find_mission">Missões Disponíveis</string>
     <string name="title_page_general_ranking">Ranking Geral</string>
-    <string name="title_page_monthly_raning">Ranking Mensal</string>
+    <string name="title_page_monthly_ranking">Ranking Mensal</string>
     <string name="fragment_current_mission_button_confirm">confirmar participação</string>
     <string name="fragment_current_mission_hour">Hora</string>
     <string name="fragment_current_mission_date">Data</string>
