@@ -49,7 +49,7 @@
             android:layout_marginTop="30dp"
             android:text="@string/title_page_general_ranking"
             android:textAllCaps="true"
-            android:textSize="35sp"
+            android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signal_logo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
