@@ -5,19 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.conslife.databinding.FragmentFindMissionBinding
+import com.conslife.databinding.FragmentFindMissionMapBinding
 
-class FindMissionFragment: Fragment() {
-    private lateinit var _binding: FragmentFindMissionBinding
+class FindMissionMap: Fragment() {
+    private lateinit var _binding: FragmentFindMissionMapBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFindMissionBinding.inflate(inflater)
+        _binding = FragmentFindMissionMapBinding.inflate(inflater)
         return _binding.root
     }
-
-
 }

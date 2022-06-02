@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_mission_navigation"
+    app:startDestination="@id/fragment_find_mission_cards">
+
+    <fragment
+        android:id="@+id/fragment_find_mission_cards"
+        tools:layout="@layout/fragment_find_mission_cards"
+        android:name="com.conslife.fragments.FindMissionFragment"
+        android:label="FindMissionFragment" />
+    <fragment
+        android:id="@+id/findMissionMap"
+        android:name="com.conslife.fragments.FindMissionMap"
+        android:label="FindMissionMap" />
+</navigation>
