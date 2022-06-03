@@ -8,10 +8,11 @@
     <fragment
         android:id="@+id/fragment_find_mission_cards"
         tools:layout="@layout/fragment_find_mission_cards"
-        android:name="com.conslife.fragments.FindMissionFragment"
+        android:name="com.conslife.fragments.FindMissionCardsFragment"
         android:label="FindMissionFragment" />
     <fragment
-        android:id="@+id/findMissionMap"
-        android:name="com.conslife.fragments.FindMissionMap"
+        android:id="@+id/fragment_find_mission_map"
+        tools:layout="@layout/fragment_find_mission_map"
+        android:name="com.conslife.fragments.FindMissionMapFragment"
         android:label="FindMissionMap" />
 </navigation>
