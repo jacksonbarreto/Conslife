@@ -55,20 +55,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signal_logo" />
 
-
-        <com.conslife.widget.FloatingRoundCounter
-            android:id="@+id/btn_Test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:floating_round_counter_total="33"
-            app:text="Test"
-            app:layout_constraintStart_toEndOf="@+id/signal_logo"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <com.conslife.widget.ViewModeButton
             android:id="@+id/find_mission_select_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:layout_constraintBottom_toBottomOf="@+id/find_mission_title_page"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout"
             app:layout_constraintTop_toTopOf="@+id/find_mission_title_page" />

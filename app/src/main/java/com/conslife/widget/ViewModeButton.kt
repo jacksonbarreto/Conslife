@@ -2,10 +2,8 @@ package com.conslife.widget
 
 import android.content.Context
 import android.util.AttributeSet
-import android.util.Log
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import androidx.navigation.fragment.NavHostFragment
 import com.conslife.R
 import com.conslife.databinding.ResViewModeButtonBinding
 
@@ -24,11 +22,9 @@ class ViewModeButton(context: Context, attrs: AttributeSet?) : LinearLayout(cont
 
 
     init {
-        isClickable = true
         context.obtainStyledAttributes(attrs, R.styleable.ViewModeButton).apply {
-            setViewModeType(getInt(R.styleable.ViewModeButton_view_mode_type, LIST_VIEW))
+            setViewModeType(getInt(R.styleable.ViewModeButton_view_mode_type, MAP_VIEW))
         }.recycle()
-        binding.viewModeButton.setOnClickListener { changeModeView() }
     }
 
 
@@ -40,7 +36,7 @@ class ViewModeButton(context: Context, attrs: AttributeSet?) : LinearLayout(cont
         }
     }
 
-    private fun changeModeView() {
+    fun changeModeView() {
         statusModeView = !statusModeView
         if (statusModeView) {
             setViewModeType(LIST_VIEW)
