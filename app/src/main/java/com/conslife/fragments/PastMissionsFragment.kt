@@ -10,6 +10,7 @@ import com.conslife.adapters.FutureMissionAdapter
 import com.conslife.adapters.PastMissionAdapter
 import com.conslife.databinding.PastMissionFragmentBinding
 import com.conslife.models.Mission
+import com.google.android.gms.maps.model.LatLng
 import java.util.ArrayList
 
 class PastMissionsFragment : Fragment() {
@@ -52,7 +53,8 @@ class PastMissionsFragment : Fragment() {
                 14,
                 469,
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
-                "Concluída"
+                "Concluída",
+                LatLng(41.7043, -8.8148)
             )
         )
         missions.add(
@@ -65,7 +67,8 @@ class PastMissionsFragment : Fragment() {
                 14,
                 469,
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
-                "Pendente"
+                "Pendente",
+                LatLng(41.7043, -8.8148)
             )
         )
         missions.add(
@@ -78,7 +81,8 @@ class PastMissionsFragment : Fragment() {
                 2,
                 247,
                 "https://essenciadoambiente.pt/wp-content/uploads/2020/09/ctt-agenda.png",
-                "anulada"
+                "anulada",
+                LatLng(41.7043, -8.8148)
             )
         )
         missions.add(
@@ -91,7 +95,8 @@ class PastMissionsFragment : Fragment() {
                 14,
                 469,
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
-                "Concluída"
+                "Concluída",
+                LatLng(41.7043, -8.8148)
             )
         )
         missions.add(
@@ -104,7 +109,8 @@ class PastMissionsFragment : Fragment() {
                 14,
                 469,
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
-                "Concluída"
+                "Concluída",
+                LatLng(41.7043, -8.8148)
             )
         )
         pastMissionAdapter.setDataSet(missions)

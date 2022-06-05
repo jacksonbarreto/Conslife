@@ -1,5 +1,7 @@
 package com.conslife.models
 
+import com.google.android.gms.maps.model.LatLng
+
 data class Mission(
     var title: String,
     var location: String,
@@ -10,4 +12,5 @@ data class Mission(
     var points: Int,
     var imageURL: String,
     var status: String,
+    var latLong: LatLng
 )
