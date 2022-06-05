@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,9 +13,9 @@
 
         <ImageView
             android:id="@+id/signal_logo"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
             android:contentDescription="@string/image_description_signal_brand"
             android:scaleType="fitXY"
@@ -22,17 +23,74 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/oval_shape"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/image_description_avatar"
+                android:src="@drawable/ic_baseline_person_24" />
+        </LinearLayout>
+
+
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="200dp"
+            android:id="@+id/find_mission_title_page"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
             android:text="@string/title_page_find_mission"
             android:textAllCaps="true"
             android:textSize="40sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signal_logo" />
+
+        <com.conslife.widget.ViewModeButton
+            android:id="@+id/find_mission_select_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/find_mission_title_page"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/find_mission_title_page" />
+
+        <LinearLayout
+            android:id="@+id/gradient_fillet"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/gradient_white_top_dow"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@+id/find_mission_search_view"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/find_mission_search_view"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/find_mission_title_page"
+            app:layout_constraintTop_toBottomOf="@+id/find_mission_title_page" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/find_mission_fragment_container_view"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:navGraph="@navigation/find_mission_navigation"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

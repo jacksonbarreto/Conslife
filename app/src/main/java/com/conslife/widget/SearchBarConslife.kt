@@ -9,15 +9,15 @@ import androidx.core.content.ContextCompat
 import com.conslife.R
 import com.conslife.databinding.ResSearchBarBinding
 
-class SearchViewConslife(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
+class SearchBarConslife(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
 
     private val binding: ResSearchBarBinding = ResSearchBarBinding.inflate(
         LayoutInflater.from(context), this, true
     )
 
     init {
-        context.obtainStyledAttributes(attrs, R.styleable.SearchViewConslife).apply {
-            getString(R.styleable.SearchViewConslife_search_view_conslife_hint)?.let { setHint(it) }
+        context.obtainStyledAttributes(attrs, R.styleable.SearchBarConslife).apply {
+            getString(R.styleable.SearchBarConslife_search_view_conslife_hint)?.let { setHint(it) }
         }.recycle()
         val editText =
             this.binding.searchView.findViewById<EditText>(androidx.appcompat.R.id.search_src_text)
