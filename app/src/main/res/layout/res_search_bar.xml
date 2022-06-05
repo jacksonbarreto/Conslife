@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/draw_search_bar_conslife"
+
         android:focusable="false"
         app:iconifiedByDefault="false"
         app:queryHint="@string/hint_search_view"
