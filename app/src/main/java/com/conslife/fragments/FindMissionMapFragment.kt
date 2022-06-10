@@ -8,10 +8,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityCompat.requestPermissions
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.conslife.R
@@ -34,11 +36,12 @@ class FindMissionMapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarke
     private lateinit var mMap: GoogleMap
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     private lateinit var lastKnownLocation: Location
-    private lateinit var missions: List<Mission>
+    private lateinit var missions: ArrayList<Mission>
     private var missionMarker = ArrayList<Marker>()
     private var locationPermissionGranted = false
     private lateinit var missionAdapter: MissionAdapter
     private val defaultLocation = LatLng(41.7043, -8.8148)
+    private val navController by lazy { NavHostFragment.findNavController(this) }
 
     companion object {
         private const val PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 0
@@ -66,10 +69,13 @@ class FindMissionMapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarke
     }
 
     private fun initializeRecyclerView() {
-        missionAdapter = MissionAdapter { mission ->
-            updateSelectedMarker(mission)
-            moveCamera(mission.latLong, DEFAULT_ZOOM.toFloat())
-        }
+        missionAdapter = MissionAdapter(
+            { mission ->
+                updateSelectedMarker(mission)
+                moveCamera(mission.latLong, DEFAULT_ZOOM.toFloat())
+            },
+            { mission: Mission -> onPrimaryButtonClicked(mission) },
+            { mission: Mission -> onSecondaryButtonClicked(mission) })
         missionAdapter.setDataSet(missions)
         _binding.findMissionsCardsRecyclerView.apply {
             layoutManager = LinearLayoutManager(
@@ -79,6 +85,36 @@ class FindMissionMapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarke
             )
             adapter = missionAdapter
         }
+    }
+
+    private fun onSecondaryButtonClicked(mission: Mission) {
+        arguments = Bundle().apply {
+            putString("missionImage", mission.imageURL)
+            putString("missionTitle", mission.title)
+            putString("missionDescription", mission.description)
+            putString("missionLocation", mission.location)
+            putString("missionDate", mission.dateRealization)
+            putString("missionDeadline", mission.deadline)
+            putInt("missionPoints", mission.points)
+        }
+        navController.navigate(R.id.action_fragment_find_mission_map_to_missionDetailsFragment, arguments)
+    }
+
+    private fun onPrimaryButtonClicked(mission: Mission) {
+        Toast.makeText(
+            this.context,
+            "${getString(R.string.toast_apply_success)} ${mission.title}",
+            Toast.LENGTH_SHORT
+        ).show()
+        removeMission(mission)
+    }
+
+    private fun removeMission(mission: Mission) {
+        missions.remove(mission)
+        missionAdapter.notifyDataSetChanged()
+        missionMarker.clear()
+        mMap.clear()
+        addMarkers()
     }
 
     private fun updateSelectedMarker(mission: Mission) {
@@ -127,7 +163,12 @@ class FindMissionMapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarke
                         // Set the map's camera position to the current location of the device.
                         lastKnownLocation = task.result
                         if (lastKnownLocation != null) {
-                            moveCamera(LatLng(lastKnownLocation.latitude, lastKnownLocation.longitude), DEFAULT_ZOOM.toFloat())
+                            moveCamera(
+                                LatLng(
+                                    lastKnownLocation.latitude,
+                                    lastKnownLocation.longitude
+                                ), DEFAULT_ZOOM.toFloat()
+                            )
                         }
                     } else {
                         Log.d("TAG", "Current location is null. Using defaults.")
