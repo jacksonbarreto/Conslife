@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.conslife.adapters.MissionAdapter
 import com.conslife.databinding.FragmentFindMissionCardsBinding
 import com.conslife.models.Mission
+import com.google.android.gms.maps.model.LatLng
 import java.util.ArrayList
 
 class FindMissionCardsFragment : Fragment() {
@@ -31,13 +32,15 @@ class FindMissionCardsFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        missionAdapter = MissionAdapter()
+        missionAdapter = MissionAdapter{}
         addDataSet()
         _binding.findMissionsCardsRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@FindMissionCardsFragment.context)
             adapter = missionAdapter
         }
     }
+
+
 
     private fun addDataSet() {
         val missions = ArrayList<Mission>()
@@ -51,7 +54,8 @@ class FindMissionCardsFragment : Fragment() {
                 2,
                 247,
                 "https://essenciadoambiente.pt/wp-content/uploads/2020/09/ctt-agenda.png",
-                "pendente"
+                "pendente",
+                LatLng(41.7043, -8.8148)
             )
         )
         missions.add(
@@ -64,7 +68,8 @@ class FindMissionCardsFragment : Fragment() {
                 14,
                 469,
                 "https://guiaanimal.net/uploads/content/image/53269/Design_sem_nome__4_.png",
-                "pendente"
+                "pendente",
+                LatLng(41.7043, -8.8148)
             )
         )
         missionAdapter.setDataSet(missions)

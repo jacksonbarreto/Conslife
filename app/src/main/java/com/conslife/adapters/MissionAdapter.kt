@@ -7,7 +7,7 @@ import com.conslife.databinding.ResItemMissionCardBinding
 import com.conslife.models.Mission
 import java.util.ArrayList
 
-class MissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MissionAdapter(private val onItemClick: (Mission) -> Unit) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var items: List<Mission> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -23,7 +23,7 @@ class MissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (holder) {
             is MissionFindViewHolder -> {
-                holder.bind(items[position])
+                holder.bind(items[position], onItemClick)
             }
         }
     }
@@ -41,7 +41,7 @@ class MissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     ) : RecyclerView.ViewHolder(itemView.root) {
         private val card = itemView.card
 
-        fun bind(mission: Mission) {
+        fun bind(mission: Mission, onItemClick: (Mission) -> Unit) {
             card.setTitle(mission.title)
             card.setLocation(mission.location)
             card.setDeadline(mission.deadline)
@@ -49,6 +49,7 @@ class MissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             card.setImage(mission.imageURL)
             card.setVacancies(mission.vacancies.toString())
             card.setPoints(mission.points.toString())
+            card.setOnClickListener { onItemClick(mission) }
         }
 
     }
