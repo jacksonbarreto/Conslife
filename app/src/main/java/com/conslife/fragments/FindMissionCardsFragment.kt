@@ -32,13 +32,15 @@ class FindMissionCardsFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        missionAdapter = MissionAdapter()
+        missionAdapter = MissionAdapter{}
         addDataSet()
         _binding.findMissionsCardsRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@FindMissionCardsFragment.context)
             adapter = missionAdapter
         }
     }
+
+
 
     private fun addDataSet() {
         val missions = ArrayList<Mission>()
