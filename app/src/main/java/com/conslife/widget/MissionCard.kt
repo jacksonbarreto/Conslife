@@ -25,8 +25,16 @@ class MissionCard(context: Context, attrs: AttributeSet?) : ConstraintLayout(con
             getString(R.styleable.MissionCard_mission_card_points)?.let { setPoints(it) }
             getString(R.styleable.MissionCard_mission_card_vacancies)?.let { setVacancies(it) }
             getString(R.styleable.MissionCard_mission_card_image_src)?.let { setImage(it) }
-            getString(R.styleable.MissionCard_mission_card_primary_button)?.let { setTextPrimaryButton(it) }
-            getString(R.styleable.MissionCard_mission_card_second_button)?.let { setTextSecondButton(it) }
+            getString(R.styleable.MissionCard_mission_card_primary_button)?.let {
+                setTextPrimaryButton(
+                    it
+                )
+            }
+            getString(R.styleable.MissionCard_mission_card_second_button)?.let {
+                setTextSecondButton(
+                    it
+                )
+            }
         }.recycle()
 
     }
@@ -80,5 +88,13 @@ class MissionCard(context: Context, attrs: AttributeSet?) : ConstraintLayout(con
 
     fun setDeadline(deadline: String) {
         binding.missionCardDeadline.setTitle(deadline)
+    }
+
+    fun setOnPrimaryButtonClickListener(function: () -> Unit) {
+        binding.missionCardPrimaryButton.setOnClickListener { function() }
+    }
+
+    fun setOnSecondaryButtonClickListener(function: () -> Unit) {
+        binding.missionCardSecondButton.setOnClickListener { function() }
     }
 }

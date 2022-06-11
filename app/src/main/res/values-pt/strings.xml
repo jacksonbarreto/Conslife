@@ -44,4 +44,7 @@
     <string name="mission_card_past_status">Status</string>
     <string name="screen_confirm_mission_instruction">Solicite ao supervisor da missão que escaneie o QR Code abaixo.</string>
     <string name="screen_confirm_mission_image_description_qrcode">QR Code para confirmar participação em missão</string>
+    <string name="toast_apply_success">"Você se inscreveu com sucesso na missão: "</string>
+    <string name="btn_applied">Inscrito</string>
+    <string name="toast_cancel_success">Foi cancelada a sua inscrição na missão %s</string>
 </resources>

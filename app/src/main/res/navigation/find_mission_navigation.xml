@@ -9,10 +9,23 @@
         android:id="@+id/fragment_find_mission_cards"
         tools:layout="@layout/fragment_find_mission_cards"
         android:name="com.conslife.fragments.FindMissionCardsFragment"
-        android:label="FindMissionFragment" />
+        android:label="FindMissionFragment" >
+        <action
+            android:id="@+id/action_fragment_find_mission_cards_to_missionDetailsFragment"
+            app:destination="@id/missionDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_find_mission_map"
         tools:layout="@layout/fragment_find_mission_map"
         android:name="com.conslife.fragments.FindMissionMapFragment"
-        android:label="FindMissionMap" />
+        android:label="FindMissionMap" >
+        <action
+            android:id="@+id/action_fragment_find_mission_map_to_missionDetailsFragment"
+            app:destination="@id/missionDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/missionDetailsFragment"
+        android:name="com.conslife.fragments.MissionDetailsFragment"
+        android:label="fragment_mission_details"
+        tools:layout="@layout/fragment_mission_details" />
 </navigation>

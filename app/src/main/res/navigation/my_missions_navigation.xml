@@ -18,7 +18,11 @@
         android:id="@+id/futureMissionsFragment"
         tools:layout="@layout/future_mission_fragment"
         android:name="com.conslife.fragments.FutureMissionsFragment"
-        android:label="FutureMissionsFragment" />
+        android:label="FutureMissionsFragment" >
+        <action
+            android:id="@+id/action_futureMissionsFragment_to_missionDetailsFragment2"
+            app:destination="@id/missionDetailsFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/pastMissionsFragment"
         tools:layout="@layout/past_mission_fragment"
@@ -29,5 +33,10 @@
         tools:layout="@layout/fragment_confirm_mission_qrcode"
         android:name="com.conslife.fragments.ConfirmMissionQrcodeFragment"
         android:label="ConfirmMissionQrcodeFragment" />
+    <fragment
+        android:id="@+id/missionDetailsFragment2"
+        android:name="com.conslife.fragments.MissionDetailsFragment"
+        android:label="fragment_mission_details"
+        tools:layout="@layout/fragment_mission_details" />
 
 </navigation>

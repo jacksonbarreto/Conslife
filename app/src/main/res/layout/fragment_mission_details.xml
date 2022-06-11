@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MissionDetailsFragment">
+
+
+    <ImageView
+        android:id="@+id/mission_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/praia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/gradient_fillet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient_white_bottom_up"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/mission_image" />
+    <com.conslife.widget.FloatingPoints
+        android:id="@+id/mission_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:floating_points_total="500"
+        app:layout_constraintBottom_toBottomOf="@+id/mission_image"
+        app:layout_constraintStart_toStartOf="@id/mission_info" />
+
+    <LinearLayout
+        android:id="@+id/mission_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mission_image"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp">
+        <com.conslife.widget.DoubleHeading
+            android:id="@+id/heading_mission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:double_heading_size="h1"
+            app:double_heading_sub_title="Cuba, Havana"
+            app:double_heading_title="Ajuda Humanitária"
+            android:layout_weight="2"/>
+        <com.conslife.widget.DoubleHeading
+            android:id="@+id/mission_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:double_heading_size="h1"
+            app:double_heading_sub_title="@string/mission_card_realization"
+            app:double_heading_title="03/06/2032"
+            android:layout_weight="1"/>
+        <com.conslife.widget.DoubleHeading
+            android:id="@+id/mission_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:double_heading_size="h1"
+            app:double_heading_sub_title="@string/mission_card_deadline"
+            app:double_heading_title="03/06/2032"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mission_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mission_info"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text=" aisfaoifaoifhaoifhaoifhaofiahofiahofiahofiad aisfaoifaoifhaoifhaoifhaofiahofiahofiahofiad ssdvsdv sfsd wefdv sfsdfsd" />
+
+    <com.conslife.widget.ButtonConslife
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mission_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        app:text="@string/btn_apply" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
