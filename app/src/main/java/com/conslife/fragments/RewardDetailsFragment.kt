@@ -1,63 +1,52 @@
 package com.conslife.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.conslife.R
-import com.conslife.databinding.FragmentMissionDetailsBinding
+import com.conslife.databinding.FragmentRewardDetailsBinding
 
-
-class MissionDetailsFragment : Fragment() {
-    private lateinit var _binding: FragmentMissionDetailsBinding
+class RewardDetailsFragment : Fragment() {
+    private lateinit var _binding: FragmentRewardDetailsBinding
     private val navController by lazy { NavHostFragment.findNavController(this) }
-    private lateinit var missionTitle: String
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentMissionDetailsBinding.inflate(inflater)
+        _binding = FragmentRewardDetailsBinding.inflate(inflater)
         return _binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        arguments?.getString("missionImage")?.let {
+        arguments?.getString("rewardImage")?.let {
             setImage(it)
         }
-        arguments?.getString("missionTitle")?.let {
-            _binding.headingMission.setTitle(it)
-            missionTitle = it
+        arguments?.getString("rewardTitle")?.let {
+            _binding.headingReward.setTitle(it)
         }
-        arguments?.getString("missionLocation")?.let {
-            _binding.headingMission.setSubTitle(it)
+        arguments?.getString("rewardDescription")?.let {
+            _binding.rewardDescription.text = it
         }
-        arguments?.getString("missionDescription")?.let {
-            _binding.missionDescription.text = it
+        arguments?.getInt("rewardPoints").let {
+            _binding.rewardPoints.setTotal(it.toString(), 1)
         }
-        arguments?.getInt("missionPoints").let {
-            _binding.missionPoints.setTotal(it.toString(), 1)
-        }
-        arguments?.getString("missionDate")?.let {
-            _binding.missionDate.setTitle(it)
-        }
-        arguments?.getString("missionDeadline")?.let {
-            _binding.missionDeadline.setTitle(it)
-        }
-        arguments?.getBoolean("missionFuture", false)?.let {
-            _binding.buttonApply.visibility = if (it) View.GONE else View.VISIBLE
+        arguments?.getString("rewardDeadline")?.let {
+            _binding.rewardDeadline.setTitle(it)
         }
         _binding.buttonApply.setOnClickListener {
             _binding.buttonApply.setText(getString(R.string.btn_applied))
             _binding.buttonApply.isEnabled = false
             Toast.makeText(
                 this.context,
-                "${getString(R.string.toast_apply_success)} $missionTitle",
+                getString(R.string.toas_reward_success),
                 Toast.LENGTH_SHORT
             ).show()
             navController.popBackStack()
@@ -72,7 +61,6 @@ class MissionDetailsFragment : Fragment() {
         Glide.with(this.context!!)
             .applyDefaultRequestOptions(requestOptions)
             .load(imageURL)
-            .into(_binding.missionImage)
+            .into(_binding.rewardImage)
     }
-
 }

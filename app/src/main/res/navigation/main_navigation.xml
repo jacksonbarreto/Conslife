@@ -7,22 +7,31 @@
 
     <fragment
         android:id="@+id/myMissionsFragment"
-        tools:layout="@layout/fragment_my_missions"
         android:name="com.conslife.fragments.MyMissionsFragment"
-        android:label="MyMissionsFragment" />
+        android:label="MyMissionsFragment"
+        tools:layout="@layout/fragment_my_missions" />
     <fragment
         android:id="@+id/rankingFragment"
-        tools:layout="@layout/fragment_ranking"
         android:name="com.conslife.fragments.RankingFragment"
-        android:label="RankingFragment" />
+        android:label="RankingFragment"
+        tools:layout="@layout/fragment_ranking" />
     <fragment
         android:id="@+id/findMissionFragment"
-        tools:layout="@layout/fragment_find_mission"
         android:name="com.conslife.fragments.FindMissionFragment"
-        android:label="FindMissionFragment" />
+        android:label="FindMissionFragment"
+        tools:layout="@layout/fragment_find_mission" />
     <fragment
         android:id="@+id/rewardsFragment"
-        tools:layout="@layout/fragment_find_mission"
         android:name="com.conslife.fragments.RewardsFragment"
-        android:label="RewardsFragment" />
+        android:label="RewardsFragment"
+        tools:layout="@layout/fragment_rewards">
+        <action
+            android:id="@+id/action_rewardsFragment_to_rewardDetailsFragment"
+            app:destination="@id/rewardDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardDetailsFragment"
+        android:name="com.conslife.fragments.RewardDetailsFragment"
+        android:label="RewardDetailsFragment"
+        tools:layout="@layout/fragment_reward_details" />
 </navigation>

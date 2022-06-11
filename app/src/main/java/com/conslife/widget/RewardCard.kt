@@ -56,4 +56,12 @@ class RewardCard(context: Context, attrs: AttributeSet?) : ConstraintLayout(cont
     fun setDescription(description: String) {
         binding.rewardCardDescription.text = description
     }
+
+    fun setOnPrimaryButtonClickListener(function: () -> Unit) {
+        binding.rewardCardBtnReserve.setOnClickListener { function() }
+    }
+
+    fun setOnSecondaryButtonClickListener(function: () -> Unit) {
+        binding.rewardCardBtnKnowMore.setOnClickListener { function() }
+    }
 }
