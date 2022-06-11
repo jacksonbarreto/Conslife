@@ -47,4 +47,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="toast_apply_success">You have successfully signed up for the quest:</string>
     <string name="btn_applied">Applied</string>
+    <string name="toast_cancel_success">Your enrollment in the %s mission has been canceled</string>
 </resources>

@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.NavHostFragment
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.conslife.R
 import com.conslife.databinding.FragmentMissionDetailsBinding
 
@@ -25,7 +27,9 @@ class MissionDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        arguments?.getString("missionImage")?.let {
+            setImage(it)
+        }
         arguments?.getString("missionTitle")?.let {
             _binding.headingMission.setTitle(it)
             missionTitle = it
@@ -45,6 +49,9 @@ class MissionDetailsFragment : Fragment() {
         arguments?.getString("missionDeadline")?.let {
             _binding.missionDeadline.setTitle(it)
         }
+        arguments?.getBoolean("missionFuture", false)?.let {
+            _binding.buttonApply.visibility = if (it) View.GONE else View.VISIBLE
+        }
         _binding.buttonApply.setOnClickListener {
             _binding.buttonApply.setText(getString(R.string.btn_applied))
             _binding.buttonApply.isEnabled = false
@@ -55,6 +62,17 @@ class MissionDetailsFragment : Fragment() {
             ).show()
             navController.popBackStack()
         }
+    }
+
+    fun setImage(imageURL: String) {
+        val requestOptions = RequestOptions()
+            .placeholder(R.drawable.ic_launcher_background)
+            .error(R.drawable.ic_launcher_background)
+
+        Glide.with(this.context!!)
+            .applyDefaultRequestOptions(requestOptions)
+            .load(imageURL)
+            .into(_binding.missionImage)
     }
 
 }

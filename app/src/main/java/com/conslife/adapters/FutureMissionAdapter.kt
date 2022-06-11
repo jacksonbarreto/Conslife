@@ -12,21 +12,28 @@ import com.conslife.databinding.ResMissionCardBinding
 import com.conslife.models.Mission
 import java.util.ArrayList
 
-class FutureMissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class FutureMissionAdapter(
+    private val onPrimaryButtonClicked: ((Mission) -> Unit)?,
+    private val onSecondaryButtonClicked: ((Mission) -> Unit)?
+) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var items: List<Mission> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
         return MissionViewHolder(
-            ResItemMissionCardFutureBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ResItemMissionCardFutureBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
         )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (holder) {
             is MissionViewHolder -> {
-                holder.bind(items[position])
+                holder.bind(items[position], onPrimaryButtonClicked, onSecondaryButtonClicked)
             }
         }
     }
@@ -35,7 +42,7 @@ class FutureMissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         return items.size
     }
 
-    fun setDataSet(missions: List<Mission>){
+    fun setDataSet(missions: List<Mission>) {
         this.items = missions
     }
 
@@ -45,7 +52,11 @@ class FutureMissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     ) : RecyclerView.ViewHolder(itemView.root) {
         private val card = itemView.card
 
-        fun bind(mission: Mission) {
+        fun bind(
+            mission: Mission,
+            onPrimaryButtonClicked: ((Mission) -> Unit)?,
+            onSecondaryButtonClicked: ((Mission) -> Unit)?
+        ) {
             card.setTitle(mission.title)
             card.setLocation(mission.location)
             card.setDeadline(mission.deadline)
@@ -53,6 +64,12 @@ class FutureMissionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             card.setImage(mission.imageURL)
             card.setVacancies(mission.vacancies.toString())
             card.setPoints(mission.points.toString())
+            card.setOnPrimaryButtonClickListener {
+                if (onPrimaryButtonClicked != null) onPrimaryButtonClicked(mission)
+            }
+            card.setOnSecondaryButtonClickListener {
+                if (onSecondaryButtonClicked != null) onSecondaryButtonClicked(mission)
+            }
         }
 
     }
