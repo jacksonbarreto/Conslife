@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "366186801652",
+    "project_id": "conslife-c8b7b",
+    "storage_bucket": "conslife-c8b7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366186801652:android:b96d86a041b4e9266af1a1",
+        "android_client_info": {
+          "package_name": "com.conslife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366186801652-7v1dvuja9jp707torl0smg8mn8ujrvn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXQ_NCqR5p3y67aqAuA0gTa3acsKvbUMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366186801652-7v1dvuja9jp707torl0smg8mn8ujrvn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
