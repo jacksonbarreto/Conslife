@@ -43,9 +43,11 @@
     <string name="mission_card_past_status">Status</string>
     <string name="screen_confirm_mission_instruction">Ask the mission supervisor to scan the QR Code below.</string>
     <string name="screen_confirm_mission_image_description_qrcode">QR Code to confirm participation in mission</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="toast_apply_success">You have successfully signed up for the quest:</string>
     <string name="btn_applied">Applied</string>
+    <string name="toast_without_point">You don\'t have enough points</string>
     <string name="toast_cancel_success">Your enrollment in the %s mission has been canceled</string>
+    <string name="toas_reward_success">You have redeemed the reward, in your email there is more information.</string>
+    <string name="screen_reward_details_reward">Reward</string>
+
 </resources>

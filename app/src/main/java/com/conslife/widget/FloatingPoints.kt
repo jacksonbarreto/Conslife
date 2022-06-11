@@ -32,6 +32,10 @@ class FloatingPoints(context: Context, attrs: AttributeSet?) : LinearLayout(cont
         "$text ${total.trim()}".also { this.binding.floatingPointsPoints.text = it }
     }
 
+    fun getTotal(): Int {
+        return this.binding.floatingPointsPoints.text.toString().replace("+", "").toInt()
+    }
+
     fun setType(type: Int) {
         val color: ColorStateList? = when (type) {
             PRIMARY -> ContextCompat.getColorStateList(context, R.color.conslife_magenta)

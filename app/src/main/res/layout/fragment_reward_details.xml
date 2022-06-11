@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MissionDetailsFragment">
+
+
+    <ImageView
+        android:id="@+id/reward_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/praia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/gradient_fillet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient_white_bottom_up"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/reward_image" />
+
+    <com.conslife.widget.FloatingPoints
+        android:id="@+id/reward_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:floating_points_total="500"
+        app:floating_points_type="secondary"
+        app:layout_constraintBottom_toBottomOf="@+id/reward_image"
+        app:layout_constraintStart_toStartOf="@id/reward_info" />
+
+    <LinearLayout
+        android:id="@+id/reward_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/reward_image">
+
+        <com.conslife.widget.DoubleHeading
+            android:id="@+id/heading_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            app:double_heading_size="h1"
+            app:double_heading_sub_title="@string/screen_reward_details_reward" />
+
+        <com.conslife.widget.DoubleHeading
+            android:id="@+id/reward_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:double_heading_size="h1"
+            app:double_heading_sub_title="@string/reward_card_deadline"
+            app:double_heading_title="03/06/2032" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reward_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/reward_info" />
+
+    <com.conslife.widget.ButtonConslife
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reward_description"
+        app:text="@string/btn_apply"
+        app:type="secondary_filled" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

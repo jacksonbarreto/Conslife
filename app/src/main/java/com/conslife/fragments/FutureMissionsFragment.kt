@@ -69,7 +69,10 @@ class FutureMissionsFragment : Fragment() {
             putInt("missionPoints", mission.points)
             putBoolean("missionFuture", true)
         }
-        navController.navigate(R.id.action_futureMissionsFragment_to_missionDetailsFragment2, arguments)
+        navController.navigate(
+            R.id.action_futureMissionsFragment_to_missionDetailsFragment2,
+            arguments
+        )
     }
 
     private fun getMissions() {
