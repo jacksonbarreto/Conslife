@@ -5,7 +5,7 @@
     <string name="activity_login_text_welcome">Welcome to Conslife!</string>
     <string name="activity_login_button_login">Login</string>
     <string name="activity_login_login_alternatives">Or login with</string>
-    <string name="conslife_motto">You, more concient</string>
+    <string name="conslife_motto">You more conscious</string>
     <string name="activity_login_hint_email">Email</string>
     <string name="activity_login_hint_password">Password</string>
     <string name="activity_login_create_account">You dont have an account? create</string>
@@ -49,5 +49,22 @@
     <string name="toast_cancel_success">Your enrollment in the %s mission has been canceled</string>
     <string name="toas_reward_success">You have redeemed the reward, in your email there is more information.</string>
     <string name="screen_reward_details_reward">Reward</string>
+    <string name="activity_sign_up_btn_sign_up">Sign Up</string>
+    <string name="activity_signup_already_account">Already have an account?</string>
+    <string name="activity_sign_up_title">Sign up for Conslife</string>
+    <string name="activity_sign_up_error_empty_password">Please enter password</string>
+    <string name="activity_sign_up_error_empty_email">Please enter email</string>
+    <string name="activity_sign_up_error_short_password">Password must be at least 6 characters long</string>
+    <string name="activity_sign_up_error_invalid_email">Please provide a valid email</string>
+    <string name="activity_sign_up_error_email_taken">An account with this email already exists</string>
+    <string name="activity_sign_up_error_unknown">An unknown error occurred that prevented your registration</string>
+    <string name="activity_sign_up_error_no_internet">Re-establish the internet connection to complete your registration</string>
+    <string name="activity_sign_up_sign_in">Click here to sign in</string>
+    <string name="activity_sign_up_error_password_mismatch">Passwords are not the same</string>
+    <string name="activity_login_hint_password_confirm">Password confirm</string>
+    <string name="toast_sign_up_success">Sign up successful</string>
+    <string name="login_failed">Login failed. Check your email and password.</string>
+    <string name="google_sign_failed">Google sign in failed</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

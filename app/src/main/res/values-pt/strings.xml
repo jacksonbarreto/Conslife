@@ -6,7 +6,7 @@
     <string name="activity_login_text_welcome">Bem-vindo ao Conslife!</string>
     <string name="activity_login_button_login">Entrar</string>
     <string name="activity_login_login_alternatives">ou conecte-se com</string>
-    <string name="conslife_motto">Exercendo sua consciência</string>
+    <string name="conslife_motto">Você mais consciênte</string>
     <string name="activity_login_hint_email">Email</string>
     <string name="activity_login_hint_password">Senha</string>
     <string name="activity_login_create_account">Não tem uma conta? crie uma</string>
@@ -50,4 +50,20 @@
     <string name="toast_cancel_success">Foi cancelada a sua inscrição na missão %s</string>
     <string name="toas_reward_success">Você resgatou a recompensa, em seu e-mail existem mais informações.</string>
     <string name="screen_reward_details_reward">Recompensa</string>
+    <string name="activity_sign_up_btn_sign_up">Inscrever-se</string>
+    <string name="activity_signup_already_account">Já tem uma conta?</string>
+    <string name="activity_sign_up_title">Registre-se no Conslife</string>
+    <string name="activity_sign_up_error_empty_password">Por favor insira sua senha</string>
+    <string name="activity_sign_up_error_empty_email">"Por favor insira seu email "</string>
+    <string name="activity_sign_up_error_short_password">A senha deve ter pelo menos 6 caracteres</string>
+    <string name="activity_sign_up_error_invalid_email">Informe um e-mail válido</string>
+    <string name="activity_sign_up_error_email_taken">Já existe uma conta com este e-mail</string>
+    <string name="activity_sign_up_error_unknown">Ocorreu um erro desconhecido que impediu o seu cadastro</string>
+    <string name="activity_sign_up_error_no_internet">Reestabeleça a conexão com a internet para concluir seu cadastro</string>
+    <string name="activity_sign_up_sign_in">Clique aqui para entrar</string>
+    <string name="activity_sign_up_error_password_mismatch">As senhas não são iguais</string>
+    <string name="activity_login_hint_password_confirm">Confirme a senha</string>
+    <string name="toast_sign_up_success">Cadastro bem sucedido</string>
+    <string name="login_failed">O login falhou. Verifique seu e-mail e senha.</string>
+    <string name="google_sign_failed">O login com o Google falhou</string>
 </resources>

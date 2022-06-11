@@ -18,7 +18,7 @@ class RewardsFragment : Fragment() {
     private lateinit var rewardAdapter: RewardAdapter
     private lateinit var rewards: ArrayList<Reward>
     private val navController by lazy { NavHostFragment.findNavController(this) }
-    private var balance = 4390
+    private var balance = 639
 
     override fun onCreateView(
         inflater: LayoutInflater,
