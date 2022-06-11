@@ -1,7 +1,6 @@
 package com.conslife.screens
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -40,7 +39,11 @@ class SignUp : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(baseContext, getString(R.string.toast_sign_up_success), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            baseContext,
+                            getString(R.string.toast_sign_up_success),
+                            Toast.LENGTH_SHORT
+                        ).show()
                         login()
                     } else {
                         showMessage(getString(R.string.activity_sign_up_error_unknown))
